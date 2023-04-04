@@ -7,7 +7,6 @@ const router=new express.Router()
 //sort-> GET /task?sortBy=createdAt:desc   -1 for desx
 router.get('/tasks',auth,async(req,res)=>{
 
-    console.log(a)
     const sort={}
     const match={}
     if(req.query.completed){
